@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Aviasales/static/css/main.6c1f9e90.chunk.css",
+    "main.js": "/Aviasales/static/js/main.75ae477a.chunk.js",
+    "main.js.map": "/Aviasales/static/js/main.75ae477a.chunk.js.map",
+    "runtime-main.js": "/Aviasales/static/js/runtime-main.109abf7f.js",
+    "runtime-main.js.map": "/Aviasales/static/js/runtime-main.109abf7f.js.map",
+    "static/js/2.e17d7c9d.chunk.js": "/Aviasales/static/js/2.e17d7c9d.chunk.js",
+    "static/js/2.e17d7c9d.chunk.js.map": "/Aviasales/static/js/2.e17d7c9d.chunk.js.map",
+    "index.html": "/Aviasales/index.html",
+    "static/css/main.6c1f9e90.chunk.css.map": "/Aviasales/static/css/main.6c1f9e90.chunk.css.map",
+    "static/js/2.e17d7c9d.chunk.js.LICENSE.txt": "/Aviasales/static/js/2.e17d7c9d.chunk.js.LICENSE.txt",
+    "static/media/logo.ae0b194c.png": "/Aviasales/static/media/logo.ae0b194c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.109abf7f.js",
+    "static/js/2.e17d7c9d.chunk.js",
+    "static/css/main.6c1f9e90.chunk.css",
+    "static/js/main.75ae477a.chunk.js"
+  ]
+}
