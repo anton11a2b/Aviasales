@@ -1,19 +1,20 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-import classes from './tabs.module.scss'
+import Tab from '../tab/tab';
 
-const Tabs = () => (
-  <div className={classes.tabs}>
-    <button className={classes.tabs__tab} type="button">
-      Самый дешевый
-    </button>
-    <button className={classes.tabs__tab} type="button">
-      Самый быстрый
-    </button>
-    <button className={classes.tabs__tab} type="button">
-      Оптимальный
-    </button>
-  </div>
-);
+import classes from './tabs.module.scss';
+
+const Tabs = () => {
+  const tabs = useSelector((state) => state.tabs);
+
+  return (
+    <div className={classes.tabs}>
+      {tabs.map((tab) => (
+        <Tab id={tab.id} key={tab.id} title={tab.title} active={tab.active} />
+      ))}
+    </div>
+  );
+};
 
 export default Tabs;
