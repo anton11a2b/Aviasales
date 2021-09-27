@@ -1,4 +1,4 @@
-import { CHECKED } from '../actions/actions';
+import { CHECKED, GET_TICKETS } from '../actions/actions';
 
 const initialState = {
   filters: [
@@ -45,10 +45,13 @@ const initialState = {
       active: false,
     },
   ],
+  tickets: [],
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case GET_TICKETS:
+      return { ...state, tickets: [...action.payload]};
     case CHECKED: {
       if (action.payload.id === 1) {
         return { ...state, filters: state.filters.map((el) => ({ ...el, checked: !action.payload.checked })) };
