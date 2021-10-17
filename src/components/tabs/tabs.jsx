@@ -11,7 +11,7 @@ const Tabs = () => {
   return (
     <div className={classes.tabs}>
       {tabs.map((tab) => (
-        <Tab id={tab.id} key={tab.id} title={tab.title} active={tab.active} />
+        <Tab id={tab.id} key={tab.id} title={tab.title} isActive={tab.active} />
       ))}
     </div>
   );

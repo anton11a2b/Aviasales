@@ -1,6 +1,7 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+
 import { checked } from '../../redux/actions/actionCreators';
 
 import classes from './filter.module.scss';
@@ -15,12 +16,12 @@ const Filter = ({ title, filter }) => {
   return (
     <div className={classes.filter}>
       <input
-        checked={filter.checked}
-        onChange={onChange}
-        className={classes.filter__input}
-        type="checkbox"
-        name={title}
         id={title}
+        name={title}
+        type="checkbox"
+        onChange={onChange}
+        checked={filter.checked}
+        className={classes.filter__input}
       />
       <label className={classes.filter__title} htmlFor={title}>
         {title}

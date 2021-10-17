@@ -1,6 +1,7 @@
 .tab {
   height: 50px;
   width: 168px;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
@@ -8,6 +9,11 @@
   background-color: #fff;
   text-transform: uppercase;
   border: 1px solid #dfe5ec;
+
+  @media (max-width: 510px) {
+    width: 133px;
+    // margin: 10px 20px;
+  }
 
   &:first-child {
     border-radius: 5px 0 0 5px;

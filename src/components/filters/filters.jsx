@@ -12,7 +12,7 @@ const Filters = () => {
     <aside className={classes.filters}>
       <h2 className={classes.filters__title}>Количество пересадок</h2>
       {filters.map((filter) => (
-        <Filter id={filter.id} key={filter.id} title={filter.title} filter={filter} />
+        <Filter key={filter.id} title={filter.title} filter={filter} />
       ))}
     </aside>
   );

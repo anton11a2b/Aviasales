@@ -1,14 +1,19 @@
 .filter {
-	margin: 20px;
+  margin: 20px;
 
-	&__title {
-		cursor: pointer;
+  @media (max-width: 770px) {
+    margin: 10px 20px;
+  }
+
+  &__title {
+    cursor: pointer;
     font-size: 13px;
+    user-select: none;
     line-height: 20px;
     padding-left: 30px;
     display: inline-block;
 
-		&::before {
+    &::before {
       content: '';
       width: 20px;
       height: 20px;
@@ -17,21 +22,21 @@
       position: absolute;
       box-shadow: 0 0 0 0.1em #9abbce;
     }
-	}
+  }
 
-	&__input {
-		border: 0;
+  &__input {
+    border: 0;
     width: 1px;
     height: 1px;
     overflow: hidden;
     position: absolute;
     clip: rect(0 0 0 0);
-	}
+  }
 }
 
 .filter__input:checked + .filter__title::before {
   box-shadow: 0 0 0 1px #2196f3;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.28571 8L0 4.16123L1.20857 3.0787L4.28571 5.82726L10.7914 0L12 1.09021L4.28571 8Z' fill='%232196F3'/%3E%3C/svg%3E%0A");
-	background-repeat: no-repeat;
-	background-position: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
